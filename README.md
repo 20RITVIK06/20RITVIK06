@@ -1,18 +1,66 @@
-# 💫 About Me:
-## 👨‍💻 About Me<br><br>🔭 Building AI-powered applications with LLMs, RAG, and modern web technologies.<br><br>👯 Open to collaborating on Open Source, AI, Full Stack, and Developer Tooling projects.<br><br>🤝 Looking to learn from experienced developers in System Design, MLOps, and Cloud Infrastructure.<br><br>🌱 Currently mastering Advanced Python, LLM Internals, AI Agents, FastAPI, Docker, and Kubernetes.<br><br>💬 Ask me about Python, FastAPI, React, REST APIs, AI, Machine Learning, RAG, and Git.<br><br>⚡ I believe the best way to learn is by shipping real products, not just completing courses.
+#!/usr/bin/env bash
+# Applies metadata changes to your GitHub repos using the GitHub CLI.
+# Prerequisites: install gh (https://cli.github.com), then run: gh auth login
+# Review each line. Destructive commands are commented out on purpose.
+# Do step 0 (rotate leaked keys) BEFORE anything else. See 00_AUDIT_AND_SUMMARY.md.
+set -euo pipefail
+OWNER=20RITVIK06
 
+# ---- Descriptions and topics (safe, reversible) -----------------------------
+gh repo edit $OWNER/production_incident_response_system \
+  --description "OpenEnv-compatible RL environment simulating production incident response: partial observability, 3 difficulty tiers, deterministic graders." \
+  --add-topic reinforcement-learning,openenv,incident-response,devops,simulation,pydantic,flask,python
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Ritvik Bezawada) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:bezawadaritvik@gmail.com) 
+gh repo edit $OWNER/loan_approval_system \
+  --description "Explainable loan approval ML pipeline: SHAP explanations, fairness metrics, FastAPI backend, Streamlit dashboard (synthetic data)." \
+  --add-topic machine-learning,explainable-ai,shap,fairness,xgboost,scikit-learn,fastapi,streamlit,python
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=20ritvik06&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=20ritvik06&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=20ritvik06&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+gh repo edit $OWNER/sign-lang-translator \
+  --description "Real-time sign recognition prototype: MediaPipe landmarks, PyTorch Transformer encoder, FastAPI WebSocket, React client (5 signs)." \
+  --add-topic computer-vision,mediapipe,pytorch,transformer,fastapi,websocket,react,sign-language,python
 
----
-[![](https://komarev.com/ghpvc/?username=20ritvik06&icon=2&color=0)](https://visitcount.itsvg.in)
+gh repo edit $OWNER/engineering-assistant-RAG \
+  --description "Document Q&A with retrieval-augmented generation: PDF/DOCX/TXT ingestion, embedding search, cited answers, low-confidence refusal. TypeScript, Express." \
+  --add-topic rag,llm,embeddings,semantic-search,typescript,express,nodejs
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+gh repo edit $OWNER/LLM_api \
+  --description "FastAPI service for question answering over PDFs using Pinecone retrieval, Gemini, and Redis caching." \
+  --add-topic rag,fastapi,pinecone,gemini,redis,llm,python
+
+gh repo edit $OWNER/music_generator \
+  --description "PyTorch LSTM symbolic music generation from classical MIDI, with Streamlit UI." \
+  --add-topic pytorch,lstm,music-generation,streamlit,python
+
+gh repo edit $OWNER/translate_studio \
+  --description "Small Node/Express translation app that keeps API keys server-side." \
+  --add-topic nodejs,express,translation
+
+gh repo edit $OWNER/stock_analyzer --description "DAA mini project: stock buy/sell analysis with brute-force and greedy algorithms."
+
+# ---- Profile README ----------------------------------------------------------
+# Copy profile/README.md over the README.md in your local clone of $OWNER/$OWNER, then:
+#   git add README.md && git commit -m "Rewrite profile README" && git push
+
+# ---- Renames (GitHub redirects old URLs; update links in your resume/READMEs) ---
+# gh repo rename document-rag-chat  --repo $OWNER/engineering-assistant-RAG --yes
+# gh repo rename document-query-api --repo $OWNER/LLM_api --yes
+# Do NOT rename production_incident_response_system: openenv.yaml and any hackathon
+# submission link to that URL.
+
+# ---- Visibility / archive (reversible) ---------------------------------------
+# gh repo edit $OWNER/operating-systems --visibility private --accept-visibility-change-consequences
+# gh repo edit $OWNER/stock_analyzer    --visibility private --accept-visibility-change-consequences
+# gh repo archive $OWNER/stock_analyzer --yes
+
+# ---- Deletions (IRREVERSIBLE; needs: gh auth refresh -s delete_repo) ---------
+# Only after rotating keys and confirming LLM_api has everything you need:
+# gh repo delete $OWNER/weather-api    --yes   # committed venv/ (14k files)
+# gh repo delete $OWNER/API            --yes   # duplicate of LLM_api
+# gh repo delete $OWNER/Query_System   --yes   # earlier iteration of LLM_api
+# gh repo delete $OWNER/Retrieval_api  --yes   # fork of your own repo
+
+# ---- Pinned repositories: manual only (no API) -------------------------------
+# github.com/20RITVIK06 > "Customize your pins". Recommended:
+#   production_incident_response_system, loan_approval_system, sign-lang-translator,
+#   engineering-assistant-RAG (or document-rag-chat), LLM_api (or document-query-api)
+echo "Done. Now pin repositories in the GitHub UI."
