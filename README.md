@@ -1,38 +1,109 @@
+<div align="center">
+
 # Ritvik Bezawada
 
-**B.Tech Computer Science student | Python backend and applied ML**
+**B.Tech Computer Science student · Python backend and applied ML**
 
-I build backend services and machine learning systems in Python: a reinforcement-learning environment for incident response, an explainable ML pipeline with fairness checks, a real-time sign recognition system, and retrieval-augmented generation (RAG) applications. I am looking for software and AI engineering internships.
+Building backend services, ML pipelines and RAG applications, with a focus on testing and honest evaluation.
 
-## Core skills
+<a href="mailto:bezawadaritvik@gmail.com">Email</a>
 
-| Area | Technologies |
-|---|---|
-| Languages | Python, SQL, TypeScript / JavaScript, C, Java (basics) |
-| Backend | FastAPI, Flask, REST APIs, WebSockets, Pydantic, Node.js / Express |
-| ML / AI | PyTorch, scikit-learn, XGBoost, SHAP, MediaPipe, RAG (embeddings, Pinecone, Gemini and OpenAI-compatible APIs) |
-| Data | Pandas, NumPy, SQLite, Redis (caching) |
-| Tooling | Git, Docker, pytest |
-| Frontend | React |
+</div>
+
+---
+
+## At a glance
+
+<table>
+  <tr>
+    <td width="25%" valign="top"><b>Education</b><br>B.Tech, Computer Science Engineering</td>
+    <td width="25%" valign="top"><b>Primary stack</b><br>Python · FastAPI · PyTorch · scikit-learn</td>
+    <td width="25%" valign="top"><b>Interests</b><br>Backend engineering · Applied ML · RAG / LLM applications</td>
+    <td width="25%" valign="top"><b>Looking for</b><br>Software and AI engineering internships</td>
+  </tr>
+</table>
+
+---
+
+## Featured projects
+
+<table>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3><a href="https://github.com/20RITVIK06/production_incident_response_system">Production Incident Response Simulator</a></h3>
+      OpenEnv-compatible reinforcement-learning environment that simulates debugging a microservices outage. An agent reads noisy logs and metrics, diagnoses the root cause and chooses remediation actions.<br><br>
+      <b>Design:</b> 7 actions · 3 difficulty tiers · partial observability · deterministic graders (correctness, efficiency, safety) · REST API<br>
+      <b>Quality:</b> 22 pytest tests · Dockerfile<br>
+      <b>Stack:</b> <code>Python</code> <code>Pydantic</code> <code>Flask</code> <code>Docker</code> <code>pytest</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/20RITVIK06/loan_approval_system">Explainable Loan Approval</a></h3>
+      Compares logistic regression, random forest and XGBoost. Explains predictions with SHAP and reports fairness metrics (demographic parity, equalized odds) across groups.<br><br>
+      <b>Note:</b> trained on a synthetic dataset; demonstrates the pipeline, not real lending performance<br>
+      <b>Stack:</b> <code>scikit-learn</code> <code>XGBoost</code> <code>SHAP</code> <code>FastAPI</code> <code>Streamlit</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/20RITVIK06/sign-lang-translator">Sign Language Translator</a></h3>
+      Real-time pipeline from webcam to prediction: MediaPipe landmarks, a PyTorch Transformer encoder, a FastAPI WebSocket server and a React client.<br><br>
+      <b>Note:</b> five-sign prototype on a small dataset<br>
+      <b>Stack:</b> <code>MediaPipe</code> <code>PyTorch</code> <code>FastAPI</code> <code>WebSockets</code> <code>React</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/20RITVIK06/engineering-assistant-RAG">Document RAG Chat</a></h3>
+      Document Q&amp;A over PDF, DOCX and TXT files. Chunked embedding search, cited answers, and a confidence threshold that declines to answer instead of guessing.<br><br>
+      <b>Note:</b> in-memory vector store; tests and evaluation in progress<br>
+      <b>Stack:</b> <code>TypeScript</code> <code>Express</code> <code>Embeddings</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/20RITVIK06/LLM_api">Document Query API</a></h3>
+      Answers questions over a PDF from a URL: clause splitting, Pinecone retrieval, Gemini answers with cited clauses, and Redis response caching.<br><br>
+      <b>Note:</b> includes Vercel and Railway deployment configuration<br>
+      <b>Stack:</b> <code>FastAPI</code> <code>Pinecone</code> <code>Gemini</code> <code>Redis</code>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Technical skills
+
+| Area | Technologies | Used in |
+|---|---|---|
+| **Languages** | Python · SQL · TypeScript / JavaScript · C · Java (basics) | All projects |
+| **Backend** | FastAPI · Flask · REST APIs · WebSockets · Pydantic · Node.js / Express | Loan Approval, Sign Language, Incident Simulator, RAG Chat |
+| **ML / AI** | PyTorch · scikit-learn · XGBoost · SHAP · MediaPipe | Loan Approval, Sign Language |
+| **LLM / RAG** | Embeddings · vector search (Pinecone) · Gemini and OpenAI-compatible APIs | RAG Chat, Document Query API |
+| **Data** | Pandas · NumPy · SQLite · Redis (caching) | Loan Approval, Document Query API |
+| **Tooling** | Git · Docker · pytest | Incident Simulator |
+| **Frontend** | React | Sign Language Translator |
+
+---
 
 ## Currently learning
 
-Data structures and algorithms · PostgreSQL and SQLAlchemy · Authentication (password hashing, JWT, OAuth2) · Testing and CI · System and API design · Cloud deployment (AWS) · Transformer internals · AI agents
-
-## Selected projects
-
-| Project | What it does | Stack |
+| Track | Topics | Status |
 |---|---|---|
-| [Production Incident Response Simulator](https://github.com/20RITVIK06/production_incident_response_system) | OpenEnv-compatible reinforcement-learning environment that simulates debugging a microservices outage. Seven actions, three difficulty tiers, deterministic graders, reward function, 22 tests. | Python, Pydantic, Flask, Docker, pytest |
-| [Explainable Loan Approval System](https://github.com/20RITVIK06/loan_approval_system) | Compares three classifiers, explains predictions with SHAP, and reports fairness metrics across groups. Trained on a synthetic dataset. | scikit-learn, XGBoost, SHAP, FastAPI, Streamlit |
-| [Sign Language Translator](https://github.com/20RITVIK06/sign-lang-translator) | Real-time recognition pipeline from webcam landmarks to a Transformer classifier, streamed to a web client. Five-sign prototype. | MediaPipe, PyTorch, FastAPI, WebSockets, React |
-| [Document RAG Chat](https://github.com/20RITVIK06/engineering-assistant-RAG) | Document Q&A with PDF/DOCX/TXT ingestion, chunked embedding search, cited answers, and refusal on low retrieval confidence. | TypeScript, Express, embeddings |
-| [Document Query API](https://github.com/20RITVIK06/LLM_api) | Answers questions over a PDF from a URL using vector retrieval and an LLM, with response caching. | FastAPI, Pinecone, Gemini, Redis |
+| **Foundations** | Data structures and algorithms · advanced Python | In progress |
+| **Backend** | PostgreSQL and SQLAlchemy · authentication (password hashing, JWT, OAuth2) · API design | In progress |
+| **Engineering practice** | Testing and CI · system design · cloud deployment (AWS) | In progress |
+| **ML / AI** | Transformer internals · AI agents | In progress |
+
+---
 
 ## Current focus
 
-Adding tests and evaluation to my RAG projects, and building a FastAPI and PostgreSQL backend with authentication.
+- Adding tests and a retrieval evaluation set to my RAG projects
+- Building a FastAPI and PostgreSQL backend with authentication and protected routes
+- Reporting results from held-out data rather than demo runs
 
-## Contact
+---
 
-[Email](mailto:bezawadaritvik@gmail.com)
+<div align="center">
+
+<a href="mailto:bezawadaritvik@gmail.com">Email</a>
+
+</div>
